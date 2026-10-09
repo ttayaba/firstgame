@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d0cbec77mxnvf" path="res://player.tscn" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://e58onxh55fj2" path="res://assets/sprites/world_tileset.png" id="2_e2o6t"]
+[ext_resource type="PackedScene" uid="uid://bllgx65fu4sq6" path="res://coin.tscn" id="3_fc0e3"]
 [ext_resource type="PackedScene" uid="uid://ceguxxyniijkx" path="res://platform.tscn" id="3_feb5d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
@@ -230,7 +231,8 @@ position = Vector2(33, 32)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=559042021]
 position = Vector2(0, -3)
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
+limit_bottom = 210
 position_smoothing_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=674122693]
@@ -244,3 +246,33 @@ position = Vector2(221, 23)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Platform2" unique_id=1874175583]
 libraries/ = SubResource("AnimationLibrary_7jktm")
 autoplay = &"move"
+
+[node name="coin" parent="." unique_id=1530515725 instance=ExtResource("3_fc0e3")]
+position = Vector2(-5, 86)
+
+[node name="coin2" parent="." unique_id=1120670924 instance=ExtResource("3_fc0e3")]
+position = Vector2(10, 87)
+
+[node name="coin3" parent="." unique_id=354773879 instance=ExtResource("3_fc0e3")]
+position = Vector2(73, 106)
+
+[node name="coin4" parent="." unique_id=1205017401 instance=ExtResource("3_fc0e3")]
+position = Vector2(89, 108)
+
+[node name="coin5" parent="." unique_id=59886094 instance=ExtResource("3_fc0e3")]
+position = Vector2(105, 106)
+
+[node name="coin6" parent="." unique_id=1795783368 instance=ExtResource("3_fc0e3")]
+position = Vector2(232, 24)
+
+[node name="coin7" parent="." unique_id=486191958 instance=ExtResource("3_fc0e3")]
+position = Vector2(121, 8)
+
+[node name="coin8" parent="." unique_id=1830603748 instance=ExtResource("3_fc0e3")]
+position = Vector2(299, 55)
+
+[node name="coin9" parent="." unique_id=1864152532 instance=ExtResource("3_fc0e3")]
+position = Vector2(313, 56)
+
+[node name="coin10" parent="." unique_id=1163278732 instance=ExtResource("3_fc0e3")]
+position = Vector2(338, 82)
